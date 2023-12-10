@@ -32,11 +32,9 @@ function onMouseMove(event) {
   }
 }
 function onMouseDown(event) {
-  painting = true;
+  painting = trueё;
 }
-// function onMouseUp(event){
-//   stopPainting();
-// }
+
 function startPainting(event) {
   painting = true;
 }
@@ -63,7 +61,6 @@ colorsContainer.addEventListener("click", changeColor);
 function changeColor(event) {
   if (event.target.className === "controls_color") {
     ctx.strokeStyle = ctx.fillStyle = event.target.style.backgroundColor;
-    //console.log( ctx.strokeStyle)
   }
 }
 
