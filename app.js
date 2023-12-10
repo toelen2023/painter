@@ -89,6 +89,5 @@ function savePicture(){
   const link = document.createElement('a');
   link.href = picture;
   link.download = "painter";
-  // console.log(link);
   link.click();
 }
